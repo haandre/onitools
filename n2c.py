@@ -27,7 +27,7 @@ def main():
         if args.male:
             name = generate_name(gender="male")
         else:
-            name = generate_name()
+            name = generate_name(gender="female")
         copy_string_to_clipboard(name)
         if args.show is True:
             print(name)
